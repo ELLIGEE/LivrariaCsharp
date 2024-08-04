@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Projeto API</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Cadastro de Livro</h1>
+        <form id="cadastroLivroForm">
+            <input type="text" id="titulo" name="titulo" placeholder="Título" required>
+            <input type="number" id="anoPublicacao" name="anoPublicacao" placeholder="Ano de Publicação" required>
+            <input type="number" id="autorId" name="autorId" placeholder="ID do Autor" required>
+            <button type="submit">Cadastrar Livro</button>
+        </form>
+    </div>
+    
+    <div class="box">
+        <h1>Buscar Livro</h1>
+        <form id="buscarLivroForm">
+            <input type="number" id="buscarLivroId" name="buscarLivroId" placeholder="ID do Livro" required>
+            <button type="submit">Buscar Livro</button>
+        </form>
+        <div id="livroEncontrado">
+            <!-- Resultados da busca aparecerão aqui -->
+        </div>
+        <div id="livroErro">
+            <!-- Mensagem de erro aparecerá aqui -->
+        </div>
+    </div>
+
+    <div class="box">
+        <h1>Listagem de Livros</h1>
+        <button id="listarLivrosBtn">Listar Livros</button>
+        <div id="listaLivros">
+            <!-- Listagem de livros aparecerá aqui -->
+        </div>
+    </div>
+</body>
+</html>
